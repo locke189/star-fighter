@@ -14,7 +14,15 @@ public class Player : MonoBehaviour
     float yMin;
     float xMax;
     float yMax;
-    
+    Coroutine ShootingCoroutine;
+
+    // References
+    [SerializeField] GameObject laser;
+    [SerializeField] float laserXOffset = 0.8f;
+    [SerializeField] float laserYOffset = 1.6f;
+    [SerializeField] float laserSpeed = 1f;
+    [SerializeField] float laserDelay = 0.2f;
+
 
     private void Start()
     {
@@ -24,6 +32,13 @@ public class Player : MonoBehaviour
     void Update()
     {
         MovePlayer();
+        if (Input.GetButtonDown("Fire1"))
+        {
+            ShootingCoroutine = StartCoroutine(ShootingSequence());
+        }
+        else if (Input.GetButtonUp("Fire1")) {
+            StopCoroutine(ShootingCoroutine);
+        }
     }
 
 
@@ -44,5 +59,21 @@ public class Player : MonoBehaviour
         var newYpos =  Mathf.Clamp(transform.position.y + deltaY, yMin, yMax);
 
         transform.position = new Vector2(newXpos, newYpos);
+    }
+
+    void ShootLaser() {
+        Vector2 laserPos = new Vector2(transform.position.x + laserXOffset, transform.position.y + laserYOffset);
+        GameObject newLaser = Instantiate(laser, laserPos, transform.rotation);
+        newLaser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, laserSpeed);
+        Destroy(newLaser, 3f);
+    }
+
+    IEnumerator ShootingSequence()
+    {
+        while(true)
+        {
+            ShootLaser();
+            yield return new WaitForSeconds(laserDelay);
+        }
     }
 }
