@@ -7,10 +7,40 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5288492363376239151, guid: 24dd4705f1a7348a7a7dac3fb7d831a0,
+        type: 3}
+      propertyPath: laserDelay
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5288492363376239151, guid: 24dd4705f1a7348a7a7dac3fb7d831a0,
+        type: 3}
+      propertyPath: randomness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -518539845074790611, guid: 24dd4705f1a7348a7a7dac3fb7d831a0,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -518539845074790611, guid: 24dd4705f1a7348a7a7dac3fb7d831a0,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483477323907567443, guid: 24dd4705f1a7348a7a7dac3fb7d831a0,
+        type: 3}
+      propertyPath: damage
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483477323907567443, guid: 24dd4705f1a7348a7a7dac3fb7d831a0,
+        type: 3}
+      propertyPath: healthPoints
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 2792164507471419487, guid: 24dd4705f1a7348a7a7dac3fb7d831a0,
         type: 3}
       propertyPath: m_Name
-      value: Enemy (1)
+      value: Enemy 2
       objectReference: {fileID: 0}
     - target: {fileID: 2792164507471419485, guid: 24dd4705f1a7348a7a7dac3fb7d831a0,
         type: 3}
