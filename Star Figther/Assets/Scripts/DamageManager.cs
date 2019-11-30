@@ -7,18 +7,13 @@ public class DamageManager : MonoBehaviour
 {
     [SerializeField] int healthPoints = 10;
     [SerializeField] int damage = 10;
-    [SerializeField] bool isEnemyFire;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        var friendlyFire = isEnemyFire == collision.GetComponent<DamageManager>().isEnemyFire;
-
-        if (!friendlyFire) {
-            DamageUpdate();
-            if (healthPoints <= 0)
-            {
-                DestructionSequence();
-            }
+        DamageUpdate();
+        if (healthPoints <= 0)
+        {
+            DestructionSequence();
         }
     }
 

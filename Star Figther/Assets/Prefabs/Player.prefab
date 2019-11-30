@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -1058003922434137593}
   - component: {fileID: 4152216486634507740}
   - component: {fileID: 6997316400066521507}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,6 +118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthPoints: 50
   damage: 10
+  isEnemyFire: 0
 --- !u!60 &4152216486634507740
 PolygonCollider2D:
   m_ObjectHideFlags: 0

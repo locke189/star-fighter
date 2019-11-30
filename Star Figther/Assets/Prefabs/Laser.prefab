@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -3309158356023904645}
   - component: {fileID: 7835537800486505668}
   - component: {fileID: -8044076731733137754}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Laser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -144,3 +144,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthPoints: 10
   damage: 10
+  isEnemyFire: 0
