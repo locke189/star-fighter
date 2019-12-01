@@ -7,6 +7,7 @@ public class DamageManager : MonoBehaviour
 {
     [SerializeField] int healthPoints = 10;
     [SerializeField] int damage = 10;
+    [SerializeField] GameObject explosion;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -19,6 +20,10 @@ public class DamageManager : MonoBehaviour
 
     private void DestructionSequence()
     {
+        if (explosion) {
+            GameObject explosionVFX = Instantiate(explosion, transform.position, Quaternion.identity);
+            Destroy(explosionVFX, explosionVFX.GetComponent<ParticleSystem>().main.duration + explosionVFX.GetComponent<ParticleSystem>().main.startLifetime.constantMax);
+        }
         Destroy(gameObject);
     }
 

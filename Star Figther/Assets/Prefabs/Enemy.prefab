@@ -110,7 +110,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthPoints: 10
   damage: 10
-  isEnemyFire: 1
+  explosion: {fileID: 2113881211259657169, guid: bb384220a23c64d56b677e74a9897804,
+    type: 3}
 --- !u!61 &-518539845074790611
 BoxCollider2D:
   m_ObjectHideFlags: 0
