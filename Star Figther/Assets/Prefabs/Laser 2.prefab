@@ -7,21 +7,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -8044076731733137754, guid: f5eb0d3ef559345c6951e387083dd687,
-        type: 3}
-      propertyPath: isEnemyFire
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -3309158356023904645, guid: f5eb0d3ef559345c6951e387083dd687,
-        type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 0.09
-      objectReference: {fileID: 0}
-    - target: {fileID: -3309158356023904645, guid: f5eb0d3ef559345c6951e387083dd687,
-        type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 0.54
-      objectReference: {fileID: 0}
     - target: {fileID: 4343325745511685899, guid: f5eb0d3ef559345c6951e387083dd687,
         type: 3}
       propertyPath: m_Name
@@ -101,7 +86,7 @@ PrefabInstance:
     - target: {fileID: 5472960618051678941, guid: f5eb0d3ef559345c6951e387083dd687,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.24368122
+      value: 0.035515495
       objectReference: {fileID: 0}
     - target: {fileID: 5472960618051678941, guid: f5eb0d3ef559345c6951e387083dd687,
         type: 3}
@@ -111,6 +96,56 @@ PrefabInstance:
     - target: {fileID: 5472960618051678941, guid: f5eb0d3ef559345c6951e387083dd687,
         type: 3}
       propertyPath: m_FlipY
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3309158356023904645, guid: f5eb0d3ef559345c6951e387083dd687,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.09
+      objectReference: {fileID: 0}
+    - target: {fileID: -3309158356023904645, guid: f5eb0d3ef559345c6951e387083dd687,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.54
+      objectReference: {fileID: 0}
+    - target: {fileID: -3309158356023904645, guid: f5eb0d3ef559345c6951e387083dd687,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.1977377
+      objectReference: {fileID: 0}
+    - target: {fileID: -3309158356023904645, guid: f5eb0d3ef559345c6951e387083dd687,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.16455746
+      objectReference: {fileID: 0}
+    - target: {fileID: -3309158356023904645, guid: f5eb0d3ef559345c6951e387083dd687,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.001008749
+      objectReference: {fileID: 0}
+    - target: {fileID: -3309158356023904645, guid: f5eb0d3ef559345c6951e387083dd687,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.105146885
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068399110942824520, guid: f5eb0d3ef559345c6951e387083dd687,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: d11076a6af9594a4cb6433b6b87c3862, type: 3}
+    - target: {fileID: 3068399110942824520, guid: f5eb0d3ef559345c6951e387083dd687,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.135
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068399110942824520, guid: f5eb0d3ef559345c6951e387083dd687,
+        type: 3}
+      propertyPath: BypassReverbZones
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068399110942824520, guid: f5eb0d3ef559345c6951e387083dd687,
+        type: 3}
+      propertyPath: m_PlayOnAwake
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

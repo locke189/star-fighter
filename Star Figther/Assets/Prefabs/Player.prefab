@@ -118,7 +118,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthPoints: 50
   damage: 10
-  isEnemyFire: 0
+  explosion: {fileID: 5165057661765413903, guid: a10dbd6b68045479aa7291bd38497e8f,
+    type: 3}
 --- !u!60 &4152216486634507740
 PolygonCollider2D:
   m_ObjectHideFlags: 0

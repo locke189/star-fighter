@@ -6,8 +6,8 @@ public class Player : MonoBehaviour
 {
     // Config
     [SerializeField] float speed = 15f;
-    [SerializeField] float xPadding = 1.6f;
-    [SerializeField] float yPadding = 1.6f;
+    [SerializeField] float xPadding = 0.8f;
+    [SerializeField] float yPadding = 0.8f;
 
     // State
     float xMin;
@@ -44,9 +44,9 @@ public class Player : MonoBehaviour
 
     void SetUpMoveBoundaries() {
         Camera gameCamera = Camera.main;
-        xMin = gameCamera.ViewportToWorldPoint(new Vector3(0, 0, 0)).x;
+        xMin = gameCamera.ViewportToWorldPoint(new Vector3(0, 0, 0)).x + xPadding;
         xMax = gameCamera.ViewportToWorldPoint(new Vector3(1, 0, 0)).x - xPadding;
-        yMax = gameCamera.ViewportToWorldPoint(new Vector3(0, 0, 0)).y;
+        yMin = gameCamera.ViewportToWorldPoint(new Vector3(0, 0, 0)).y + yPadding;
         yMax = gameCamera.ViewportToWorldPoint(new Vector3(0, 1, 0)).y - yPadding;
     }
 
@@ -67,6 +67,7 @@ public class Player : MonoBehaviour
         newLaser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, laserSpeed);
         Destroy(newLaser, 3f);
     }
+
 
     IEnumerator ShootingSequence()
     {

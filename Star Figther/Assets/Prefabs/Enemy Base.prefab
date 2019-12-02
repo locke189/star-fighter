@@ -14,8 +14,9 @@ GameObject:
   - component: {fileID: 2483477323907567443}
   - component: {fileID: -518539845074790611}
   - component: {fileID: 5288492363376239151}
-  m_Layer: 9
-  m_Name: Enemy
+  - component: {fileID: -1744014489709740587}
+  m_Layer: 10
+  m_Name: Enemy Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -110,7 +111,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthPoints: 10
   damage: 10
-  explosion: {fileID: 2113881211259657169, guid: bb384220a23c64d56b677e74a9897804,
+  explosion: {fileID: 1056870164260762662, guid: 8c974af14c4fc40e8a231de39ea5b277,
     type: 3}
 --- !u!61 &-518539845074790611
 BoxCollider2D:
@@ -157,3 +158,24 @@ MonoBehaviour:
   laserSpeed: -10
   laserDelay: 2
   laserLifeTime: 2.2
+--- !u!50 &-1744014489709740587
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2792164507471419487}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
