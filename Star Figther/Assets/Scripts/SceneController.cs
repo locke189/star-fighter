@@ -13,11 +13,16 @@ public class SceneController : MonoBehaviour
     }
 
     public void LoadGameOver() {
-        SceneManager.LoadScene("Game Over");
+        StartCoroutine(GameOverCoroutine());
     }
 
      public void LoadGame()
     {
         SceneManager.LoadScene("Level 1");
+    }
+
+    IEnumerator GameOverCoroutine() {
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene("Game Over");
     }
 }
